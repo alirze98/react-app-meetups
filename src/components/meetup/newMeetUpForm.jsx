@@ -31,7 +31,7 @@ const NewMeetUpForm = (props) => {
         </div>
         <div className={classes.control}>
           <label htmlFor="image">MeetUp Image</label>
-          <input ref={urlInput} type="ulr" id="image" required />
+          <input ref={urlInput} type="ulr" id="image" required placeholder="enter your image's URL" />
         </div>
         <div className={classes.control}>
           <label htmlFor="address">MeetUp address</label>

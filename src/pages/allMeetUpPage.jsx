@@ -30,11 +30,13 @@ const AllMeetUpPage = () => {
 
   return (
     <>
-      {isLoading?(
+      {isLoading ? (
         <section>
           <p>loading...</p>
         </section>
-      ):<MeetUpList data={loadedMeetUps} />}
+      ) : (
+        <MeetUpList data={loadedMeetUps} />
+      )}
     </>
   );
 };
